@@ -210,11 +210,11 @@ if __name__ == '__main__':
     if option2 == 'Plasma':
         url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
         #file = open('pahPlasma_1.txt', 'r')
-        file = open(url, 'r')
+        file = pd.read_csv(url)
         main(file)
     if option2 == 'NotPlasma':
         url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt'
-        file = open(url, 'r')
+        file = pd.read_csv(url)
         #file = open('notPlasma_1.txt', 'r')
         main(file)
 
