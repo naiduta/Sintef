@@ -210,13 +210,16 @@ def main(file):
 
 if __name__ == '__main__':
     if option2 == 'Plasma':
-        #url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
         #file = open('pahPlasma_1.txt', 'r')
-        file = urllib3.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt')
+        http = urllib3.PoolManager()
+        #file = urllib3.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt')
+        file = http.request('GET', 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt')
         main(file)
     if option2 == 'NotPlasma':
         #url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt'
-        file = urllib3.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt')
+        http = urllib3.PoolManager()
+        file = http.request('GET', 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt')
+        #file = urllib3.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt')
         #file = open('notPlasma_1.txt', 'r')
         main(file)
 
