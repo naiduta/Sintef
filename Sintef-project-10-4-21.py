@@ -208,9 +208,13 @@ def main(file):
 
 if __name__ == '__main__':
     if option2 == 'Plasma':
-        file = open('pahPlasma_1.txt', 'r')
+        url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
+        #file = open('pahPlasma_1.txt', 'r')
+        file = open(url, 'r')
         main(file)
     if option2 == 'NotPlasma':
-        file = open('notPlasma_1.txt', 'r')
+        url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
+        file = open(url, 'r')
+        #file = open('notPlasma_1.txt', 'r')
         main(file)
 
