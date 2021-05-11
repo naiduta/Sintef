@@ -213,7 +213,7 @@ if __name__ == '__main__':
         file = open(url, 'r')
         main(file)
     if option2 == 'NotPlasma':
-        url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
+        url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt'
         file = open(url, 'r')
         #file = open('notPlasma_1.txt', 'r')
         main(file)
