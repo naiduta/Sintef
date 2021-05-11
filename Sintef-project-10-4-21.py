@@ -208,13 +208,13 @@ def main(file):
 
 if __name__ == '__main__':
     if option2 == 'Plasma':
-        url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
+        #url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
         #file = open('pahPlasma_1.txt', 'r')
-        file = pd.read_csv(url)
+        file = pd.read_csv('https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt')
         main(file)
     if option2 == 'NotPlasma':
-        url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt'
-        file = pd.read_csv(url)
+        #url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt'
+        file = pd.read_csv('https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt')
         #file = open('notPlasma_1.txt', 'r')
         main(file)
 
