@@ -9,7 +9,7 @@ import plotly.express as px
 # from PIL import Image
 from datetime import date, time, datetime
 import requests
-import urllib2
+import urllib
 # image3 = Image.open('sintef-logo-centered-negative.jpg')
 # image1 = Image.open('enviotlogo.jpg')
 col1, col2, col3 = st.beta_columns([1,3,1])
@@ -212,11 +212,11 @@ if __name__ == '__main__':
     if option2 == 'Plasma':
         #url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt'
         #file = open('pahPlasma_1.txt', 'r')
-        file = urllib2.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt')
+        file = urllib.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/pahPlasma_1.txt')
         main(file)
     if option2 == 'NotPlasma':
         #url = 'https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt'
-        file = urllib2.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt')
+        file = urllib.urlopen('https://raw.githubusercontent.com/naiduta/Sintef/main/notPlasma_1.txt')
         #file = open('notPlasma_1.txt', 'r')
         main(file)
 
